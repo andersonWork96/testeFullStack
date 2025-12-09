@@ -1,0 +1,172 @@
+:root {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #0f172a;
+  background: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at 20% 20%, #e2e8f0, #f8fafc 35%),
+    radial-gradient(circle at 80% 10%, #dbeafe, #f8fafc 45%);
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: #0f172a;
+  color: #f8fafc;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 6px 24px rgba(15, 23, 42, 0.35);
+}
+
+.nav .logo {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.nav nav {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-link {
+  color: #e2e8f0;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 12px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.nav-link.active {
+  background: #6366f1;
+  color: #f8fafc;
+}
+
+.page {
+  width: min(1200px, 95vw);
+  margin: 28px auto 80px;
+  flex: 1;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 16px 60px rgba(15, 23, 42, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.card small {
+  color: #475569;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.section-header h2 {
+  margin: 0;
+}
+
+.form {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.form input,
+.form textarea,
+.form select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  font: inherit;
+}
+
+.form button {
+  border: none;
+  padding: 10px 14px;
+  background: #0f172a;
+  color: #f8fafc;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.form button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.2);
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: #e2e8f0;
+  color: #0f172a;
+  font-size: 12px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actions button {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.actions button.danger {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+@media (max-width: 720px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .nav nav {
+    flex-wrap: wrap;
+  }
+}
