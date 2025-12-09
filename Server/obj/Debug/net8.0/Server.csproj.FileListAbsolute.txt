@@ -253,3 +253,4 @@
 /Users/anderson/Desktop/testeProjeto/testeFullStack/Server/obj/Debug/net8.0/Server.pdb
 /Users/anderson/Desktop/testeProjeto/testeFullStack/Server/obj/Debug/net8.0/Server.genruntimeconfig.cache
 /Users/anderson/Desktop/testeProjeto/testeFullStack/Server/obj/Debug/net8.0/ref/Server.dll
+/Users/anderson/Desktop/testeProjeto/testeFullStack/Server/obj/Debug/net8.0/Server.sourcelink.json
